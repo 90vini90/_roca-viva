@@ -41,3 +41,15 @@ header p {
     color: white;
     text-shadow: 1px 1px 5px #102600;
 }
+
+nav {
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
