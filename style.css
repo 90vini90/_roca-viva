@@ -48,8 +48,44 @@ nav {
     padding: 5px;
 }
 
+nav a:hover {
+    background-color: var(--cor2);
+    border-radius: 5px 5px 0px 0px;
+    color: lightblue;
+    text-decoration: underline;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     padding: 5px;
 }
+
+/* .videos {
+    background-color: lightgray;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+} */
+
+main {
+    background-color: white;
+    padding: 50px;
+    margin: 0px 30px;
+}
+
+article h1 {
+    color: var(--cor1);
+    font-family: American;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 2px 5px var(--cor2);
+}
+
+/* .shorts {
+    background-color: lightgray;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+} */

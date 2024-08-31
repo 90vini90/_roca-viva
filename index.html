@@ -18,25 +18,38 @@
     </nav>
     <main>
         <article>
-            <h1>Veja aqui os meus vídeos</h1>
+            <h1>Veja aqui os meus videos</h1>
             <p>Fique por dentro de tudo</p>
-            <div class="videos">
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
-                <a href="#">Video 1</a>
+            <div>
+               <a href="#" class="videos" onclick="clicar()">Videos</a>
+               <div id="res"></div>
+               <a href="#" class="shorts" onclick="clicar2()" id="shorts">Shorts</a>
+               <div id="res2"></div>
             </div>
         </article>
     </main>
     <footer>
         <p>Criado por: &copy;Marcus Vinícius da Silva</p>
     </footer>
+
+
+
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?') 
+        window.alert(`Bem vindo ${nome}...`)
+
+        function clicar() {
+            var vid = document.getElementsByClassName('videos')[0]; // Corrigido para acessar o primeiro elemento com a classe 'videos'
+            var res = document.querySelector('div#res'); // Seleciona o elemento com o id 'res'
+            res.innerHTML = `<p>Você já clicou aqui em videos ${nome}...</p>`; // Corrigido o uso do innerHTML
+        }
+        function clicar2() {
+        var vid = document.getElementsByClassName('videos')[0]; // Acessa o primeiro elemento com a classe 'videos'
+        var res = document.querySelector('div#res2'); // Seleciona o elemento com o id 'res'
+        res.innerHTML = `<p>Você já clicou aqui em shorts ${nome}...</p>`; // Define o conteúdo HTML no elemento 'res'
+    }
+    </script>
+    
 </body>
 </html>
