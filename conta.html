@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta no Roça Viva</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div#conta {
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 20px;
+            color: black;
+            font-weight: bolder;
+        }
+        input {
+            margin: 10px;
+        }
+
+        input#botao {
+            background-color: darkred;
+            color: white;
+            border: none;
+            text-decoration: underline;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vindos ao site do Roca Viva</h1>
+        <p>Aqui você encontra de tudo</p>
+    </header>
+    <nav>
+        <a href="https://youtube.com/@rocaviva2024" target="_blank">Meu canal</a>
+        <a href="index.html">Início</a>
+        <a href="shorts.html">Shorts</a>
+    <a href="conta.html">Cria sua conta</a>
+    </nav>
+    <main>
+        <article>
+            <h1 style="margin-bottom: 15px;">Bem vindo ao nosso site!</h1>
+            <div id="conta" style="margin-bottom: 15px;">
+                <p>Coloca aqui teu nome: <input type="text" name="nome" id="nomedaconta"></p>
+
+                <p>Coloca aqui teu email: <input type="email" name="email" id="emaildaconta"></p>
+
+                <p>Coloca aqui teu gênero: <input type="radio" name="gen" id="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="gen" id="fem">
+                    <label for="fem">Feminino</label></p>
+
+                    
+            </div>
+            <input type="button" value="Salvar" id="botao" onclick="clicar()"></input>
+            <br>
+            <strong id="res"></strong>
+        </article>
+    </main>
+    <footer>
+        <p>Criado por: &copy;Marcus Vinícius da Silva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
