@@ -6,5 +6,5 @@ var res = window.document.querySelector('strong#res')
 var botao = window.document.querySelector('input#botao')
 
 function clicar() {
-    res.innerHTML = 'Bem vindo ao nosso site'
+    res.innerHTML = 'Bem-Vindo ao meu site'
 }
